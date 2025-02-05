@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="images/wppusher-logo copy (1).png" alt="Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Learn More</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Help</a></li>
+        <li><button class="account-btn">Account</button></li>
+      </ul>
+    </nav>
+    <div class="mainContainer">
+      <form class="form-container">
+        <h2>Your Basic Information</h2>
+        <div class="form-group name-fields">
+          <input type="text" placeholder="First Name" required />
+          <input type="text" placeholder="Last Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <h2>Your Payment Information</h2>
+        <div class="form-group">
+          <label for="card">Credit Card</label>
+          <input type="text" id="card" placeholder="Card Number" required />
+        </div>
+
+        <button class="btn">Buy WP Pusher</button>
+        <p class="support-text">
+          Need any help? Don’t hesitate to contact support!
+        </p>
+      </form>
+      <div class="sideBarImage">
+        <img src="images/side bar content (1).png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
