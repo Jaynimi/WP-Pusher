@@ -4,9 +4,13 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #F5F8FA;
     margin: 0;
 }
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 
 /* Navigation */
 nav {
@@ -64,7 +68,7 @@ li a {
     display: flex;
     /* justify-content: center; */
     /* align-items: center;  */
-    height: 60vh;
+    height: 70vh;
     margin-top: 8vh;
 }
 
@@ -72,7 +76,7 @@ li a {
 .form-container {
     background: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px 0 0 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 60%;
     align-items: center;
@@ -111,12 +115,13 @@ input {
 /* Button */
 .btn {
     width: 100%;
-    padding: 10px;
-    background: #007bff;
+    padding: 8px 10px;
+    background: 
+    #038E7D;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -128,7 +133,7 @@ input {
 .support-text {
     text-align: center;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 5px;
     color: #666;
 }
 
@@ -136,9 +141,10 @@ input {
     background-color: #0056b3;
     padding: 10px;
     width: 40%;
-    height: 60vh;
+    height: 64vh;
     display: flex;
     justify-content: center;
+    border-radius: 0 8px 8px 0;
 }
 
 .sideBarImage img {
@@ -146,3 +152,57 @@ input {
     height: 100%;
     max-height: 100%;
 }
+
+.stripe {
+    display: flex;
+    justify-content: center;
+    height: 1rem;
+}
+
+@media (max-width: 600px)  {
+    li a {
+        font-size: .67rem;
+    }
+
+    .navbar img {
+        width: 6rem;
+        height: 1.8rem;
+        padding-left: 10px;
+    }
+    
+    .nav-links button {
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: .67rem;
+    }
+}
+
+
+    @media (max-width: 600px) {
+        .mainContainer {
+            flex-direction: column;
+            width: 100%; /* Ensure it takes the full width */
+            align-items: center;
+            /* margin-bottom: 10vh; */
+        }
+    
+        .form-container {
+            width: 90%; /* Adjust for smaller screens */
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    
+        .sideBarImage {
+            width: 95%;
+            max-width: 100%;
+            height: auto;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    
+        .sideBarImage img {
+            width: 60%;
+            padding-top: 30px;
+            height: auto;
+        }
+    }
